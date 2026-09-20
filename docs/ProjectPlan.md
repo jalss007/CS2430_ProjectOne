@@ -24,7 +24,7 @@
   - **Assigned To:** Team
   - **Evidence:** Branch `feature/sorting-algos`
 
-- [ ] **Task 4: UML & System Structure Diagram**
+- [x] **Task 4: UML & System Structure Diagram**
   - **Status:** In Progress (Scheduled for Saturday)
   - **Assigned To:** Team
 
