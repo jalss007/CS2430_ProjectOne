@@ -1,6 +1,9 @@
 import random 
 from typing import List, Tuple
 
+from permutations import next_permutation
+
+
 # --------------------------------------------------------------------------
 # Sort 1: Mergesort
 # --------------------------------------------------------------------------

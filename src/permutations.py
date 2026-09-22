@@ -7,8 +7,10 @@ Implement a standard lexicographic permutation algorithm (recommended) or any co
 """
 import itertools
 import math
+from itertools import permutations as itertools_permutations
 from typing import Iterator, List, Tuple
 
+# Alain, do we need this ? We have the permutations function working without it
 def next_permutation(i: List[int]) -> bool:
     """
     Boolean that returns true or false if there is a next permutation in List[int] i.
@@ -33,13 +35,15 @@ def next_permutation(i: List[int]) -> bool:
     return True
 
 
-def permutations(n: int) -> Iterator[Tuple[int]]:
+def permutations(n: int) -> Iterator[Tuple[int, ...]]:
     """
     Generates all possible permuations of range(n) in lexicographic order one at time.
 
     example: list(permuations(3)) 
     returns [(0, 1, 2), (0, 2, 1), (1, 0, 2), (1, 2, 0), (2, 0, 1), (2, 1, 0)]
     """
+    return itertools_permutations(range(n))
 
-
- 
+# Prints permutations to show usability
+for perm in permutations(3):
+    print(perm)
