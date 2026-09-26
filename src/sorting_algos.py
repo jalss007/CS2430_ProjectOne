@@ -97,3 +97,98 @@ def quicksort(arr: List[int], randomized_pivot: bool = False) -> Tuple[List[int]
  
     _sort(0, len(a) - 1)
     return a, comparisons
+# --------------------------------------------------------------------------
+# Sort 3: Shaker sort (bidirectional bubble sort)
+# --------------------------------------------------------------------------
+def shaker_sort(arr: List[int]) -> Tuple[List[int], int]:
+    """
+    Sort 'arr' using shaker sort which is a type of bubble sort that alternates between left and right
+    on every pass. Compared to traditional bubble sort which always sweeps left to right, shaker sort
+    can be more efficient in some cases because it can move elements to their correct position faster
+    by moving in both directions.
+
+    Returns: (sorted_array, comparison_count)
+    """
+    comparisons = 0
+    a = arr[:]  # work on a private copy; never mutate the caller's list
+    low = 0
+    high = len(a) - 1
+ 
+    while low < high:
+        # Forward pass: bubble the largest item in a[lo..hi] to a[hi].
+        swapped = False
+        for i in range(low, high):
+            comparisons += 1
+            if a[i] > a[i + 1]:
+                a[i], a[i + 1] = a[i + 1], a[i]
+                swapped = True
+        high -= 1  # a[hi] (pre-decrement) is now the largest remaining item, so it's placed
+ 
+        if not swapped:
+            break  # nothing moved on the forward pass: already sorted
+ 
+        # Backward pass: bubble the smallest item in a[lo..hi] to a[lo].
+        swapped = False
+        for i in range(high, low, -1):
+            comparisons += 1
+            if a[i - 1] > a[i]:
+                a[i - 1], a[i] = a[i], a[i - 1]
+                swapped = True
+        low += 1  # a[lo] (pre-increment) is now the smallest remaining item, so it's placed
+ 
+        if not swapped:
+            break  # nothing moved on the backward pass: already sorted
+ 
+    return a, comparisons
+# --------------------------------------------------------------------------
+# Sort 4: Heapsort
+# --------------------------------------------------------------------------
+def heapsort(arr: List[int]) -> Tuple[List[int], int]:
+    """
+    Sort 'arr' using heapsort which is a comparison-based sorting algorithm that uses a binary heap data structure.
+    It works by first building a max heap from the input data, and then repeatedly extracting the maximum element from the heap and rebuilding the heap until all elements are sorted.
+    
+    Returns:
+        (sorted_array, comparison_count)
+    """
+    comparisons = 0
+    a = arr[:]  # work on a private copy; never mutate the caller's list
+    n = len(a)
+ 
+    def _sift_down(root: int, size: int) -> None:
+        """Restore the max-heap property for the subtree rooted at `root`,
+        within a[0:size], assuming both of its children are already
+        valid heaps."""
+        nonlocal comparisons
+        while True:
+            largest = root
+            left = 2 * root + 1
+            right = 2 * root + 2
+ 
+            if left < size:
+                comparisons += 1
+                if a[left] > a[largest]:
+                    largest = left
+            if right < size:
+                comparisons += 1
+                if a[right] > a[largest]:
+                    largest = right
+ 
+            if largest == root:
+                return  # root is already >= both children: heap restored
+            a[root], a[largest] = a[largest], a[root]
+            root = largest  # keep sifting the displaced value down
+ 
+    # Phase 1: build the max-heap bottom-up. Leaves (indices >= n // 2)
+    # are trivially valid 1-element heaps already, so start just above them.
+    for root in range(n // 2 - 1, -1, -1):
+        _sift_down(root, n)
+ 
+    # Phase 2: repeatedly move the max to the end of the unsorted region.
+    for end in range(n - 1, 0, -1):
+        a[0], a[end] = a[end], a[0]  # largest remaining item -> its final slot
+        _sift_down(0, end)           # heap now covers a[0:end]; restore it
+ 
+    return a, comparisons
+
+
