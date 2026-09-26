@@ -40,6 +40,3 @@ def permutations(n: int) -> Iterator[Tuple[int]]:
     example: list(permuations(3)) 
     returns [(0, 1, 2), (0, 2, 1), (1, 0, 2), (1, 2, 0), (2, 0, 1), (2, 1, 0)]
     """
-
-
- 

@@ -25,7 +25,7 @@
   - **Evidence:** Branch `feature/sorting-algos`
 
 - [x] **Task 4: UML & System Structure Diagram**
-  - **Status:** In Progress (Scheduled for Saturday)
+  - **Status:** Done (Scheduled for Saturday)
   - **Assigned To:** Team
 
 - [ ] **Task 5: Part 3 Test Driver & Data Collection ($n = 4, 6, 8$)**
@@ -57,3 +57,5 @@ Helped Alain integrate and test the pivot finding and suffix reversal logic with
 
 **Blocker / risk this week?**
 None. Resolved the slice index syntax bug in `next_permutation()`.
+
+### Week 2 Status Report
