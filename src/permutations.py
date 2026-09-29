@@ -40,3 +40,34 @@ def permutations(n: int) -> Iterator[Tuple[int]]:
     example: list(permuations(3)) 
     returns [(0, 1, 2), (0, 2, 1), (1, 0, 2), (1, 2, 0), (2, 0, 1), (2, 1, 0)]
     """
+    if n < 0:
+        raise ValueError("n must be a non-negetive integer")
+    if n == 0:
+        yield()
+        return
+    
+    current = list(range(n)) #lexicographically this is the smallest permutation
+    yield tuple(current)
+    while next_permutation(current):
+        yield tuple(current)
+
+def format_permutation(perm: Tuple[int,...]) -> str:
+    # rendering the permutation that should look like this e.g: {0 , 1 , 2}
+    return "{" + ", ".join(str(x) for x in perm) + "}"
+
+if __name__ == "__main__":
+    n = 3
+    results = list(permutation(n))
+
+    print(f"All {math.factorial(n)} permutations of 0.. {n-1}:\n")
+    print(", ".join(_format_like_example(p) for p in results))
+
+    # Sanity checks: right count, no duplicates, and matches the
+    # standard library's own permutation generator.
+    assert len(results) == math.factorial(n), "wrong number of permutations"
+    assert len(set(results)) == len(results), "a duplicate permutation was produced"
+    assert set(results) == set(itertools.permutations(range(n))), "results are incorrect"
+    print("\n(passed count / uniqueness / correctness checks)")
+
+
+    
