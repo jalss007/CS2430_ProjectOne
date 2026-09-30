@@ -57,10 +57,10 @@ def format_permutation(perm: Tuple[int,...]) -> str:
 
 if __name__ == "__main__":
     n = 3
-    results = list(permutation(n))
+    results = list(permutations(n))
 
     print(f"All {math.factorial(n)} permutations of 0.. {n-1}:\n")
-    print(", ".join(_format_like_example(p) for p in results))
+    print(", ".join(form_permutation(p) for p in results))
 
     # Sanity checks: right count, no duplicates, and matches the
     # standard library's own permutation generator.
