@@ -73,7 +73,7 @@ def quicksort(arr: List[int], randomized_pivot: bool = False) -> Tuple[List[int]
     comparisons = 0
     a = arr[:]  # work on a private copy; never mutate the caller's list
  
-    def _partition(lo: int, hi: int) -> int:
+    def partition(lo: int, hi: int) -> int:
         nonlocal comparisons
         if randomized_pivot:
             r = random.randint(lo, hi)
@@ -89,13 +89,13 @@ def quicksort(arr: List[int], randomized_pivot: bool = False) -> Tuple[List[int]
         a[i + 1], a[hi] = a[hi], a[i + 1]   # put the pivot in its final spot
         return i + 1                        # pivot's final index
  
-    def _sort(lo: int, hi: int) -> None:
+    def sort(lo: int, hi: int) -> None:
         if lo < hi:
-            p = _partition(lo, hi)
-            _sort(lo, p - 1)      # everything left of the pivot
-            _sort(p + 1, hi)      # everything right of the pivot
+            p = partition(lo, hi)
+            sort(lo, p - 1)      # everything left of the pivot
+            sort(p + 1, hi)      # everything right of the pivot
  
-    _sort(0, len(a) - 1)
+    sort(0, len(a) - 1)
     return a, comparisons
 # --------------------------------------------------------------------------
 # Sort 3: Shaker sort (bidirectional bubble sort)
@@ -143,7 +143,7 @@ def shaker_sort(arr: List[int]) -> Tuple[List[int], int]:
 # --------------------------------------------------------------------------
 # Sort 4: Heapsort
 # --------------------------------------------------------------------------
-def heapsort(arr: List[int]) -> Tuple[List[int], int]:
+def heap_sort(arr: List[int]) -> Tuple[List[int], int]:
     """
     Sort 'arr' using heapsort which is a comparison-based sorting algorithm that uses a binary heap data structure.
     It works by first building a max heap from the input data, and then repeatedly extracting the maximum element from the heap and rebuilding the heap until all elements are sorted.
@@ -155,7 +155,7 @@ def heapsort(arr: List[int]) -> Tuple[List[int], int]:
     a = arr[:]  # work on a private copy; never mutate the caller's list
     n = len(a)
  
-    def _sift_down(root: int, size: int) -> None:
+    def sift_down(root: int, size: int) -> None:
         """Restore the max-heap property for the subtree rooted at `root`,
         within a[0:size], assuming both of its children are already
         valid heaps."""
@@ -182,12 +182,12 @@ def heapsort(arr: List[int]) -> Tuple[List[int], int]:
     # Phase 1: build the max-heap bottom-up. Leaves (indices >= n // 2)
     # are trivially valid 1-element heaps already, so start just above them.
     for root in range(n // 2 - 1, -1, -1):
-        _sift_down(root, n)
+        sift_down(root, n)
  
     # Phase 2: repeatedly move the max to the end of the unsorted region.
     for end in range(n - 1, 0, -1):
         a[0], a[end] = a[end], a[0]  # largest remaining item -> its final slot
-        _sift_down(0, end)           # heap now covers a[0:end]; restore it
+        sift_down(0, end)           # heap now covers a[0:end]; restore it
  
     return a, comparisons
 
