@@ -3,9 +3,12 @@ Driver program: ties the permutation generator and all four sorting
 algorithms together. As per the assignment requirements, this driver records the
 
 - Algorithm name
-- Unsorted array 
+- Unsorted array
 - Number of comparisons
 
+Run with no arguments to reproduce the required experiment (n = 4, 6, 8).
+Optionally, one or more sizes can be passed on the command line to run a
+different set instead, e.g. `python3 driver.py 3` or `python3 driver.py 5 7`.
 """
 
 import csv
@@ -17,11 +20,11 @@ from typing import List, Tuple
 from permutations import permutations
 from sorting_algos import mergesort, quicksort, shaker_sort, heap_sort
 
-# Default size of array to test (permutations(N) produces N! arrays,
-# and each is run through all 4 algorithms, so keep N modest --
-# 5! = 120 arrays x 4 algorithms = 480 runs is quick; 8! = 40320 would
-# make the printed table and CSV unwieldy).
-N = 5
+# Required experiment sizes (permutations(n) produces n! arrays, and
+# each is run through all 4 algorithms -- 8! = 40320 arrays x 4
+# algorithms = 161,280 runs, which still finishes in a couple seconds).
+N_Values = [4, 6, 8] # number of elements in the array to be sorted per the assignment.
+Top_N = 10
 
 ALGORITHMS = {
     "mergesort": mergesort,
@@ -67,28 +70,26 @@ def run_test(n: int) -> List[Result]:
 
 
 def print_report(results: List[Result], n: int) -> None:
-    """Print every recorded run, then a per-algorithm summary."""
-    array_width = max(len(str(r.unsorted_array)) for r in results)
+    """Print a clearly labeled best-N / worst-N / average summary per algorithm."""
+    print(f"\n{'=' * 70}")
+    print(f"n = {n}   ({len(list(permutations(n)))} permutations, {len(results)} total runs)")
+    print(f"{'=' * 70}")
 
-    print(f"Ran {len(ALGORITHMS)} algorithms against all {len(list(permutations(n)))} "
-          f"permutations of 0..{n - 1} ({len(results)} total runs)\n")
-
-    print(f"{'algorithm':<12}  {'unsorted array':<{array_width}}  comparisons")
-    print("-" * (12 + array_width + 15))
-    for r in results:
-        print(f"{r.algorithm:<12}  {str(r.unsorted_array):<{array_width}}  {r.comparisons}")
-
-    # Per-algorithm summary: total / average / min / max comparisons
-    # across every permutation tested. This is what actually shows the
-    # difference in how consistent each algorithm is (e.g. mergesort's
-    # comparison count barely moves between arrays; quicksort's swings a lot).
-    print(f"\n{'algorithm':<12}  {'total':>8}  {'average':>9}  {'min':>6}  {'max':>6}")
-    print("-" * 50)
     for name in ALGORITHMS:
-        counts = [r.comparisons for r in results if r.algorithm == name]
-        total = sum(counts)
-        average = total / len(counts)
-        print(f"{name:<12}  {total:>8}  {average:>9.2f}  {min(counts):>6}  {max(counts):>6}")
+        runs = [r for r in results if r.algorithm == name]
+        by_comparisons = sorted(runs, key=lambda r: r.comparisons)
+        best = by_comparisons[:Top_N]
+        worst = list(reversed(by_comparisons[-Top_N:]))
+        average = sum(r.comparisons for r in runs) / len(runs)
+
+        print(f"\n  {name}")
+        print(f"    average comparisons over {len(runs)} permutations: {average:.2f}")
+        print(f"    best {Top_N} (fewest comparisons):")
+        for r in best:
+            print(f"      {r.comparisons:>4}  {r.unsorted_array}")
+        print(f"    worst {Top_N} (most comparisons):")
+        for r in worst:
+            print(f"      {r.comparisons:>4}  {r.unsorted_array}")
 
 
 def write_csv(results: List[Result], path: Path) -> None:
@@ -101,14 +102,18 @@ def write_csv(results: List[Result], path: Path) -> None:
 
 
 def main() -> None:
-    n = int(sys.argv[1]) if len(sys.argv) > 1 else N
+    # No arguments -> run the required sizes (4, 6, 8). Passing one or
+    # more sizes on the command line overrides that, for quick ad-hoc
+    # testing without touching the required default.
+    n_values = [int(arg) for arg in sys.argv[1:]] if len(sys.argv) > 1 else N_Values
 
-    results = run_test(n)
-    print_report(results, n)
+    for n in n_values:
+        results = run_test(n)
+        print_report(results, n)
 
-    csv_path = Path(__file__).with_name("driver_results.csv")
-    write_csv(results, csv_path)
-    print(f"\nWrote {len(results)} rows to {csv_path}")
+        csv_path = Path(__file__).with_name(f"driver_results_n{n}.csv")
+        write_csv(results, csv_path)
+        print(f"\n  full results for n={n} written to {csv_path.name}")
 
 
 if __name__ == "__main__":
