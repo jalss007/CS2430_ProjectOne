@@ -1,0 +1,481 @@
+algorithm,unsorted_array,comparisons
+mergesort,"[0, 1, 2, 3, 4]",5
+quicksort,"[0, 1, 2, 3, 4]",10
+shaker sort,"[0, 1, 2, 3, 4]",4
+heapsort,"[0, 1, 2, 3, 4]",12
+mergesort,"[0, 1, 2, 4, 3]",5
+quicksort,"[0, 1, 2, 4, 3]",7
+shaker sort,"[0, 1, 2, 4, 3]",7
+heapsort,"[0, 1, 2, 4, 3]",12
+mergesort,"[0, 1, 3, 2, 4]",6
+quicksort,"[0, 1, 3, 2, 4]",8
+shaker sort,"[0, 1, 3, 2, 4]",7
+heapsort,"[0, 1, 3, 2, 4]",11
+mergesort,"[0, 1, 3, 4, 2]",6
+quicksort,"[0, 1, 3, 4, 2]",6
+shaker sort,"[0, 1, 3, 4, 2]",9
+heapsort,"[0, 1, 3, 4, 2]",11
+mergesort,"[0, 1, 4, 2, 3]",6
+quicksort,"[0, 1, 4, 2, 3]",7
+shaker sort,"[0, 1, 4, 2, 3]",7
+heapsort,"[0, 1, 4, 2, 3]",10
+mergesort,"[0, 1, 4, 3, 2]",6
+quicksort,"[0, 1, 4, 3, 2]",6
+shaker sort,"[0, 1, 4, 3, 2]",9
+heapsort,"[0, 1, 4, 3, 2]",10
+mergesort,"[0, 2, 1, 3, 4]",6
+quicksort,"[0, 2, 1, 3, 4]",9
+shaker sort,"[0, 2, 1, 3, 4]",7
+heapsort,"[0, 2, 1, 3, 4]",12
+mergesort,"[0, 2, 1, 4, 3]",6
+quicksort,"[0, 2, 1, 4, 3]",6
+shaker sort,"[0, 2, 1, 4, 3]",7
+heapsort,"[0, 2, 1, 4, 3]",12
+mergesort,"[0, 2, 3, 1, 4]",7
+quicksort,"[0, 2, 3, 1, 4]",8
+shaker sort,"[0, 2, 3, 1, 4]",9
+heapsort,"[0, 2, 3, 1, 4]",11
+mergesort,"[0, 2, 3, 4, 1]",7
+quicksort,"[0, 2, 3, 4, 1]",7
+shaker sort,"[0, 2, 3, 4, 1]",9
+heapsort,"[0, 2, 3, 4, 1]",11
+mergesort,"[0, 2, 4, 1, 3]",7
+quicksort,"[0, 2, 4, 1, 3]",6
+shaker sort,"[0, 2, 4, 1, 3]",9
+heapsort,"[0, 2, 4, 1, 3]",10
+mergesort,"[0, 2, 4, 3, 1]",7
+quicksort,"[0, 2, 4, 3, 1]",7
+shaker sort,"[0, 2, 4, 3, 1]",9
+heapsort,"[0, 2, 4, 3, 1]",10
+mergesort,"[0, 3, 1, 2, 4]",7
+quicksort,"[0, 3, 1, 2, 4]",8
+shaker sort,"[0, 3, 1, 2, 4]",7
+heapsort,"[0, 3, 1, 2, 4]",12
+mergesort,"[0, 3, 1, 4, 2]",7
+quicksort,"[0, 3, 1, 4, 2]",6
+shaker sort,"[0, 3, 1, 4, 2]",9
+heapsort,"[0, 3, 1, 4, 2]",12
+mergesort,"[0, 3, 2, 1, 4]",8
+quicksort,"[0, 3, 2, 1, 4]",8
+shaker sort,"[0, 3, 2, 1, 4]",9
+heapsort,"[0, 3, 2, 1, 4]",12
+mergesort,"[0, 3, 2, 4, 1]",8
+quicksort,"[0, 3, 2, 4, 1]",6
+shaker sort,"[0, 3, 2, 4, 1]",9
+heapsort,"[0, 3, 2, 4, 1]",12
+mergesort,"[0, 3, 4, 1, 2]",8
+quicksort,"[0, 3, 4, 1, 2]",6
+shaker sort,"[0, 3, 4, 1, 2]",10
+heapsort,"[0, 3, 4, 1, 2]",10
+mergesort,"[0, 3, 4, 2, 1]",8
+quicksort,"[0, 3, 4, 2, 1]",6
+shaker sort,"[0, 3, 4, 2, 1]",10
+heapsort,"[0, 3, 4, 2, 1]",10
+mergesort,"[0, 4, 1, 2, 3]",7
+quicksort,"[0, 4, 1, 2, 3]",7
+shaker sort,"[0, 4, 1, 2, 3]",7
+heapsort,"[0, 4, 1, 2, 3]",12
+mergesort,"[0, 4, 1, 3, 2]",7
+quicksort,"[0, 4, 1, 3, 2]",6
+shaker sort,"[0, 4, 1, 3, 2]",9
+heapsort,"[0, 4, 1, 3, 2]",12
+mergesort,"[0, 4, 2, 1, 3]",8
+quicksort,"[0, 4, 2, 1, 3]",6
+shaker sort,"[0, 4, 2, 1, 3]",9
+heapsort,"[0, 4, 2, 1, 3]",12
+mergesort,"[0, 4, 2, 3, 1]",8
+quicksort,"[0, 4, 2, 3, 1]",7
+shaker sort,"[0, 4, 2, 3, 1]",9
+heapsort,"[0, 4, 2, 3, 1]",12
+mergesort,"[0, 4, 3, 1, 2]",8
+quicksort,"[0, 4, 3, 1, 2]",6
+shaker sort,"[0, 4, 3, 1, 2]",10
+heapsort,"[0, 4, 3, 1, 2]",11
+mergesort,"[0, 4, 3, 2, 1]",8
+quicksort,"[0, 4, 3, 2, 1]",7
+shaker sort,"[0, 4, 3, 2, 1]",10
+heapsort,"[0, 4, 3, 2, 1]",11
+mergesort,"[1, 0, 2, 3, 4]",5
+quicksort,"[1, 0, 2, 3, 4]",10
+shaker sort,"[1, 0, 2, 3, 4]",7
+heapsort,"[1, 0, 2, 3, 4]",12
+mergesort,"[1, 0, 2, 4, 3]",5
+quicksort,"[1, 0, 2, 4, 3]",7
+shaker sort,"[1, 0, 2, 4, 3]",7
+heapsort,"[1, 0, 2, 4, 3]",12
+mergesort,"[1, 0, 3, 2, 4]",6
+quicksort,"[1, 0, 3, 2, 4]",8
+shaker sort,"[1, 0, 3, 2, 4]",7
+heapsort,"[1, 0, 3, 2, 4]",11
+mergesort,"[1, 0, 3, 4, 2]",6
+quicksort,"[1, 0, 3, 4, 2]",6
+shaker sort,"[1, 0, 3, 4, 2]",9
+heapsort,"[1, 0, 3, 4, 2]",11
+mergesort,"[1, 0, 4, 2, 3]",6
+quicksort,"[1, 0, 4, 2, 3]",7
+shaker sort,"[1, 0, 4, 2, 3]",7
+heapsort,"[1, 0, 4, 2, 3]",10
+mergesort,"[1, 0, 4, 3, 2]",6
+quicksort,"[1, 0, 4, 3, 2]",6
+shaker sort,"[1, 0, 4, 3, 2]",9
+heapsort,"[1, 0, 4, 3, 2]",10
+mergesort,"[1, 2, 0, 3, 4]",6
+quicksort,"[1, 2, 0, 3, 4]",10
+shaker sort,"[1, 2, 0, 3, 4]",9
+heapsort,"[1, 2, 0, 3, 4]",12
+mergesort,"[1, 2, 0, 4, 3]",6
+quicksort,"[1, 2, 0, 4, 3]",7
+shaker sort,"[1, 2, 0, 4, 3]",9
+heapsort,"[1, 2, 0, 4, 3]",12
+mergesort,"[1, 2, 3, 0, 4]",7
+quicksort,"[1, 2, 3, 0, 4]",10
+shaker sort,"[1, 2, 3, 0, 4]",9
+heapsort,"[1, 2, 3, 0, 4]",11
+mergesort,"[1, 2, 3, 4, 0]",7
+quicksort,"[1, 2, 3, 4, 0]",10
+shaker sort,"[1, 2, 3, 4, 0]",9
+heapsort,"[1, 2, 3, 4, 0]",11
+mergesort,"[1, 2, 4, 0, 3]",7
+quicksort,"[1, 2, 4, 0, 3]",7
+shaker sort,"[1, 2, 4, 0, 3]",9
+heapsort,"[1, 2, 4, 0, 3]",10
+mergesort,"[1, 2, 4, 3, 0]",7
+quicksort,"[1, 2, 4, 3, 0]",10
+shaker sort,"[1, 2, 4, 3, 0]",9
+heapsort,"[1, 2, 4, 3, 0]",10
+mergesort,"[1, 3, 0, 2, 4]",7
+quicksort,"[1, 3, 0, 2, 4]",8
+shaker sort,"[1, 3, 0, 2, 4]",9
+heapsort,"[1, 3, 0, 2, 4]",12
+mergesort,"[1, 3, 0, 4, 2]",7
+quicksort,"[1, 3, 0, 4, 2]",6
+shaker sort,"[1, 3, 0, 4, 2]",9
+heapsort,"[1, 3, 0, 4, 2]",12
+mergesort,"[1, 3, 2, 0, 4]",8
+quicksort,"[1, 3, 2, 0, 4]",10
+shaker sort,"[1, 3, 2, 0, 4]",9
+heapsort,"[1, 3, 2, 0, 4]",12
+mergesort,"[1, 3, 2, 4, 0]",8
+quicksort,"[1, 3, 2, 4, 0]",9
+shaker sort,"[1, 3, 2, 4, 0]",9
+heapsort,"[1, 3, 2, 4, 0]",12
+mergesort,"[1, 3, 4, 0, 2]",8
+quicksort,"[1, 3, 4, 0, 2]",6
+shaker sort,"[1, 3, 4, 0, 2]",10
+heapsort,"[1, 3, 4, 0, 2]",10
+mergesort,"[1, 3, 4, 2, 0]",8
+quicksort,"[1, 3, 4, 2, 0]",9
+shaker sort,"[1, 3, 4, 2, 0]",10
+heapsort,"[1, 3, 4, 2, 0]",10
+mergesort,"[1, 4, 0, 2, 3]",7
+quicksort,"[1, 4, 0, 2, 3]",7
+shaker sort,"[1, 4, 0, 2, 3]",9
+heapsort,"[1, 4, 0, 2, 3]",12
+mergesort,"[1, 4, 0, 3, 2]",7
+quicksort,"[1, 4, 0, 3, 2]",6
+shaker sort,"[1, 4, 0, 3, 2]",9
+heapsort,"[1, 4, 0, 3, 2]",12
+mergesort,"[1, 4, 2, 0, 3]",8
+quicksort,"[1, 4, 2, 0, 3]",7
+shaker sort,"[1, 4, 2, 0, 3]",9
+heapsort,"[1, 4, 2, 0, 3]",12
+mergesort,"[1, 4, 2, 3, 0]",8
+quicksort,"[1, 4, 2, 3, 0]",10
+shaker sort,"[1, 4, 2, 3, 0]",9
+heapsort,"[1, 4, 2, 3, 0]",12
+mergesort,"[1, 4, 3, 0, 2]",8
+quicksort,"[1, 4, 3, 0, 2]",6
+shaker sort,"[1, 4, 3, 0, 2]",10
+heapsort,"[1, 4, 3, 0, 2]",11
+mergesort,"[1, 4, 3, 2, 0]",8
+quicksort,"[1, 4, 3, 2, 0]",10
+shaker sort,"[1, 4, 3, 2, 0]",10
+heapsort,"[1, 4, 3, 2, 0]",11
+mergesort,"[2, 0, 1, 3, 4]",6
+quicksort,"[2, 0, 1, 3, 4]",9
+shaker sort,"[2, 0, 1, 3, 4]",7
+heapsort,"[2, 0, 1, 3, 4]",12
+mergesort,"[2, 0, 1, 4, 3]",6
+quicksort,"[2, 0, 1, 4, 3]",6
+shaker sort,"[2, 0, 1, 4, 3]",7
+heapsort,"[2, 0, 1, 4, 3]",12
+mergesort,"[2, 0, 3, 1, 4]",7
+quicksort,"[2, 0, 3, 1, 4]",8
+shaker sort,"[2, 0, 3, 1, 4]",9
+heapsort,"[2, 0, 3, 1, 4]",11
+mergesort,"[2, 0, 3, 4, 1]",7
+quicksort,"[2, 0, 3, 4, 1]",7
+shaker sort,"[2, 0, 3, 4, 1]",9
+heapsort,"[2, 0, 3, 4, 1]",11
+mergesort,"[2, 0, 4, 1, 3]",7
+quicksort,"[2, 0, 4, 1, 3]",6
+shaker sort,"[2, 0, 4, 1, 3]",9
+heapsort,"[2, 0, 4, 1, 3]",10
+mergesort,"[2, 0, 4, 3, 1]",7
+quicksort,"[2, 0, 4, 3, 1]",7
+shaker sort,"[2, 0, 4, 3, 1]",9
+heapsort,"[2, 0, 4, 3, 1]",10
+mergesort,"[2, 1, 0, 3, 4]",6
+quicksort,"[2, 1, 0, 3, 4]",10
+shaker sort,"[2, 1, 0, 3, 4]",9
+heapsort,"[2, 1, 0, 3, 4]",12
+mergesort,"[2, 1, 0, 4, 3]",6
+quicksort,"[2, 1, 0, 4, 3]",7
+shaker sort,"[2, 1, 0, 4, 3]",9
+heapsort,"[2, 1, 0, 4, 3]",12
+mergesort,"[2, 1, 3, 0, 4]",7
+quicksort,"[2, 1, 3, 0, 4]",9
+shaker sort,"[2, 1, 3, 0, 4]",9
+heapsort,"[2, 1, 3, 0, 4]",11
+mergesort,"[2, 1, 3, 4, 0]",7
+quicksort,"[2, 1, 3, 4, 0]",8
+shaker sort,"[2, 1, 3, 4, 0]",9
+heapsort,"[2, 1, 3, 4, 0]",11
+mergesort,"[2, 1, 4, 0, 3]",7
+quicksort,"[2, 1, 4, 0, 3]",7
+shaker sort,"[2, 1, 4, 0, 3]",9
+heapsort,"[2, 1, 4, 0, 3]",10
+mergesort,"[2, 1, 4, 3, 0]",7
+quicksort,"[2, 1, 4, 3, 0]",8
+shaker sort,"[2, 1, 4, 3, 0]",9
+heapsort,"[2, 1, 4, 3, 0]",10
+mergesort,"[2, 3, 0, 1, 4]",7
+quicksort,"[2, 3, 0, 1, 4]",8
+shaker sort,"[2, 3, 0, 1, 4]",10
+heapsort,"[2, 3, 0, 1, 4]",12
+mergesort,"[2, 3, 0, 4, 1]",7
+quicksort,"[2, 3, 0, 4, 1]",6
+shaker sort,"[2, 3, 0, 4, 1]",10
+heapsort,"[2, 3, 0, 4, 1]",12
+mergesort,"[2, 3, 1, 0, 4]",8
+quicksort,"[2, 3, 1, 0, 4]",9
+shaker sort,"[2, 3, 1, 0, 4]",10
+heapsort,"[2, 3, 1, 0, 4]",12
+mergesort,"[2, 3, 1, 4, 0]",8
+quicksort,"[2, 3, 1, 4, 0]",8
+shaker sort,"[2, 3, 1, 4, 0]",10
+heapsort,"[2, 3, 1, 4, 0]",12
+mergesort,"[2, 3, 4, 0, 1]",8
+quicksort,"[2, 3, 4, 0, 1]",6
+shaker sort,"[2, 3, 4, 0, 1]",10
+heapsort,"[2, 3, 4, 0, 1]",10
+mergesort,"[2, 3, 4, 1, 0]",8
+quicksort,"[2, 3, 4, 1, 0]",8
+shaker sort,"[2, 3, 4, 1, 0]",10
+heapsort,"[2, 3, 4, 1, 0]",10
+mergesort,"[2, 4, 0, 1, 3]",7
+quicksort,"[2, 4, 0, 1, 3]",6
+shaker sort,"[2, 4, 0, 1, 3]",10
+heapsort,"[2, 4, 0, 1, 3]",12
+mergesort,"[2, 4, 0, 3, 1]",7
+quicksort,"[2, 4, 0, 3, 1]",7
+shaker sort,"[2, 4, 0, 3, 1]",10
+heapsort,"[2, 4, 0, 3, 1]",12
+mergesort,"[2, 4, 1, 0, 3]",8
+quicksort,"[2, 4, 1, 0, 3]",7
+shaker sort,"[2, 4, 1, 0, 3]",10
+heapsort,"[2, 4, 1, 0, 3]",12
+mergesort,"[2, 4, 1, 3, 0]",8
+quicksort,"[2, 4, 1, 3, 0]",8
+shaker sort,"[2, 4, 1, 3, 0]",10
+heapsort,"[2, 4, 1, 3, 0]",12
+mergesort,"[2, 4, 3, 0, 1]",8
+quicksort,"[2, 4, 3, 0, 1]",7
+shaker sort,"[2, 4, 3, 0, 1]",10
+heapsort,"[2, 4, 3, 0, 1]",11
+mergesort,"[2, 4, 3, 1, 0]",8
+quicksort,"[2, 4, 3, 1, 0]",8
+shaker sort,"[2, 4, 3, 1, 0]",10
+heapsort,"[2, 4, 3, 1, 0]",11
+mergesort,"[3, 0, 1, 2, 4]",7
+quicksort,"[3, 0, 1, 2, 4]",8
+shaker sort,"[3, 0, 1, 2, 4]",7
+heapsort,"[3, 0, 1, 2, 4]",12
+mergesort,"[3, 0, 1, 4, 2]",7
+quicksort,"[3, 0, 1, 4, 2]",6
+shaker sort,"[3, 0, 1, 4, 2]",9
+heapsort,"[3, 0, 1, 4, 2]",12
+mergesort,"[3, 0, 2, 1, 4]",8
+quicksort,"[3, 0, 2, 1, 4]",8
+shaker sort,"[3, 0, 2, 1, 4]",9
+heapsort,"[3, 0, 2, 1, 4]",12
+mergesort,"[3, 0, 2, 4, 1]",8
+quicksort,"[3, 0, 2, 4, 1]",6
+shaker sort,"[3, 0, 2, 4, 1]",9
+heapsort,"[3, 0, 2, 4, 1]",12
+mergesort,"[3, 0, 4, 1, 2]",8
+quicksort,"[3, 0, 4, 1, 2]",6
+shaker sort,"[3, 0, 4, 1, 2]",10
+heapsort,"[3, 0, 4, 1, 2]",9
+mergesort,"[3, 0, 4, 2, 1]",8
+quicksort,"[3, 0, 4, 2, 1]",6
+shaker sort,"[3, 0, 4, 2, 1]",10
+heapsort,"[3, 0, 4, 2, 1]",9
+mergesort,"[3, 1, 0, 2, 4]",7
+quicksort,"[3, 1, 0, 2, 4]",8
+shaker sort,"[3, 1, 0, 2, 4]",9
+heapsort,"[3, 1, 0, 2, 4]",12
+mergesort,"[3, 1, 0, 4, 2]",7
+quicksort,"[3, 1, 0, 4, 2]",6
+shaker sort,"[3, 1, 0, 4, 2]",9
+heapsort,"[3, 1, 0, 4, 2]",12
+mergesort,"[3, 1, 2, 0, 4]",8
+quicksort,"[3, 1, 2, 0, 4]",10
+shaker sort,"[3, 1, 2, 0, 4]",9
+heapsort,"[3, 1, 2, 0, 4]",12
+mergesort,"[3, 1, 2, 4, 0]",8
+quicksort,"[3, 1, 2, 4, 0]",8
+shaker sort,"[3, 1, 2, 4, 0]",9
+heapsort,"[3, 1, 2, 4, 0]",12
+mergesort,"[3, 1, 4, 0, 2]",8
+quicksort,"[3, 1, 4, 0, 2]",6
+shaker sort,"[3, 1, 4, 0, 2]",10
+heapsort,"[3, 1, 4, 0, 2]",9
+mergesort,"[3, 1, 4, 2, 0]",8
+quicksort,"[3, 1, 4, 2, 0]",8
+shaker sort,"[3, 1, 4, 2, 0]",10
+heapsort,"[3, 1, 4, 2, 0]",9
+mergesort,"[3, 2, 0, 1, 4]",7
+quicksort,"[3, 2, 0, 1, 4]",8
+shaker sort,"[3, 2, 0, 1, 4]",10
+heapsort,"[3, 2, 0, 1, 4]",12
+mergesort,"[3, 2, 0, 4, 1]",7
+quicksort,"[3, 2, 0, 4, 1]",7
+shaker sort,"[3, 2, 0, 4, 1]",10
+heapsort,"[3, 2, 0, 4, 1]",12
+mergesort,"[3, 2, 1, 0, 4]",8
+quicksort,"[3, 2, 1, 0, 4]",10
+shaker sort,"[3, 2, 1, 0, 4]",10
+heapsort,"[3, 2, 1, 0, 4]",12
+mergesort,"[3, 2, 1, 4, 0]",8
+quicksort,"[3, 2, 1, 4, 0]",8
+shaker sort,"[3, 2, 1, 4, 0]",10
+heapsort,"[3, 2, 1, 4, 0]",12
+mergesort,"[3, 2, 4, 0, 1]",8
+quicksort,"[3, 2, 4, 0, 1]",7
+shaker sort,"[3, 2, 4, 0, 1]",10
+heapsort,"[3, 2, 4, 0, 1]",9
+mergesort,"[3, 2, 4, 1, 0]",8
+quicksort,"[3, 2, 4, 1, 0]",8
+shaker sort,"[3, 2, 4, 1, 0]",10
+heapsort,"[3, 2, 4, 1, 0]",9
+mergesort,"[3, 4, 0, 1, 2]",6
+quicksort,"[3, 4, 0, 1, 2]",6
+shaker sort,"[3, 4, 0, 1, 2]",10
+heapsort,"[3, 4, 0, 1, 2]",12
+mergesort,"[3, 4, 0, 2, 1]",6
+quicksort,"[3, 4, 0, 2, 1]",7
+shaker sort,"[3, 4, 0, 2, 1]",10
+heapsort,"[3, 4, 0, 2, 1]",12
+mergesort,"[3, 4, 1, 0, 2]",7
+quicksort,"[3, 4, 1, 0, 2]",6
+shaker sort,"[3, 4, 1, 0, 2]",10
+heapsort,"[3, 4, 1, 0, 2]",12
+mergesort,"[3, 4, 1, 2, 0]",7
+quicksort,"[3, 4, 1, 2, 0]",8
+shaker sort,"[3, 4, 1, 2, 0]",10
+heapsort,"[3, 4, 1, 2, 0]",12
+mergesort,"[3, 4, 2, 0, 1]",7
+quicksort,"[3, 4, 2, 0, 1]",7
+shaker sort,"[3, 4, 2, 0, 1]",10
+heapsort,"[3, 4, 2, 0, 1]",12
+mergesort,"[3, 4, 2, 1, 0]",7
+quicksort,"[3, 4, 2, 1, 0]",8
+shaker sort,"[3, 4, 2, 1, 0]",10
+heapsort,"[3, 4, 2, 1, 0]",12
+mergesort,"[4, 0, 1, 2, 3]",7
+quicksort,"[4, 0, 1, 2, 3]",7
+shaker sort,"[4, 0, 1, 2, 3]",7
+heapsort,"[4, 0, 1, 2, 3]",10
+mergesort,"[4, 0, 1, 3, 2]",7
+quicksort,"[4, 0, 1, 3, 2]",6
+shaker sort,"[4, 0, 1, 3, 2]",9
+heapsort,"[4, 0, 1, 3, 2]",10
+mergesort,"[4, 0, 2, 1, 3]",8
+quicksort,"[4, 0, 2, 1, 3]",6
+shaker sort,"[4, 0, 2, 1, 3]",9
+heapsort,"[4, 0, 2, 1, 3]",10
+mergesort,"[4, 0, 2, 3, 1]",8
+quicksort,"[4, 0, 2, 3, 1]",7
+shaker sort,"[4, 0, 2, 3, 1]",9
+heapsort,"[4, 0, 2, 3, 1]",10
+mergesort,"[4, 0, 3, 1, 2]",8
+quicksort,"[4, 0, 3, 1, 2]",6
+shaker sort,"[4, 0, 3, 1, 2]",10
+heapsort,"[4, 0, 3, 1, 2]",9
+mergesort,"[4, 0, 3, 2, 1]",8
+quicksort,"[4, 0, 3, 2, 1]",7
+shaker sort,"[4, 0, 3, 2, 1]",10
+heapsort,"[4, 0, 3, 2, 1]",9
+mergesort,"[4, 1, 0, 2, 3]",7
+quicksort,"[4, 1, 0, 2, 3]",7
+shaker sort,"[4, 1, 0, 2, 3]",9
+heapsort,"[4, 1, 0, 2, 3]",10
+mergesort,"[4, 1, 0, 3, 2]",7
+quicksort,"[4, 1, 0, 3, 2]",6
+shaker sort,"[4, 1, 0, 3, 2]",9
+heapsort,"[4, 1, 0, 3, 2]",10
+mergesort,"[4, 1, 2, 0, 3]",8
+quicksort,"[4, 1, 2, 0, 3]",7
+shaker sort,"[4, 1, 2, 0, 3]",9
+heapsort,"[4, 1, 2, 0, 3]",10
+mergesort,"[4, 1, 2, 3, 0]",8
+quicksort,"[4, 1, 2, 3, 0]",10
+shaker sort,"[4, 1, 2, 3, 0]",9
+heapsort,"[4, 1, 2, 3, 0]",10
+mergesort,"[4, 1, 3, 0, 2]",8
+quicksort,"[4, 1, 3, 0, 2]",6
+shaker sort,"[4, 1, 3, 0, 2]",10
+heapsort,"[4, 1, 3, 0, 2]",9
+mergesort,"[4, 1, 3, 2, 0]",8
+quicksort,"[4, 1, 3, 2, 0]",9
+shaker sort,"[4, 1, 3, 2, 0]",10
+heapsort,"[4, 1, 3, 2, 0]",9
+mergesort,"[4, 2, 0, 1, 3]",7
+quicksort,"[4, 2, 0, 1, 3]",6
+shaker sort,"[4, 2, 0, 1, 3]",10
+heapsort,"[4, 2, 0, 1, 3]",10
+mergesort,"[4, 2, 0, 3, 1]",7
+quicksort,"[4, 2, 0, 3, 1]",7
+shaker sort,"[4, 2, 0, 3, 1]",10
+heapsort,"[4, 2, 0, 3, 1]",10
+mergesort,"[4, 2, 1, 0, 3]",8
+quicksort,"[4, 2, 1, 0, 3]",7
+shaker sort,"[4, 2, 1, 0, 3]",10
+heapsort,"[4, 2, 1, 0, 3]",10
+mergesort,"[4, 2, 1, 3, 0]",8
+quicksort,"[4, 2, 1, 3, 0]",10
+shaker sort,"[4, 2, 1, 3, 0]",10
+heapsort,"[4, 2, 1, 3, 0]",10
+mergesort,"[4, 2, 3, 0, 1]",8
+quicksort,"[4, 2, 3, 0, 1]",7
+shaker sort,"[4, 2, 3, 0, 1]",10
+heapsort,"[4, 2, 3, 0, 1]",9
+mergesort,"[4, 2, 3, 1, 0]",8
+quicksort,"[4, 2, 3, 1, 0]",10
+shaker sort,"[4, 2, 3, 1, 0]",10
+heapsort,"[4, 2, 3, 1, 0]",9
+mergesort,"[4, 3, 0, 1, 2]",6
+quicksort,"[4, 3, 0, 1, 2]",6
+shaker sort,"[4, 3, 0, 1, 2]",10
+heapsort,"[4, 3, 0, 1, 2]",10
+mergesort,"[4, 3, 0, 2, 1]",6
+quicksort,"[4, 3, 0, 2, 1]",6
+shaker sort,"[4, 3, 0, 2, 1]",10
+heapsort,"[4, 3, 0, 2, 1]",10
+mergesort,"[4, 3, 1, 0, 2]",7
+quicksort,"[4, 3, 1, 0, 2]",6
+shaker sort,"[4, 3, 1, 0, 2]",10
+heapsort,"[4, 3, 1, 0, 2]",10
+mergesort,"[4, 3, 1, 2, 0]",7
+quicksort,"[4, 3, 1, 2, 0]",9
+shaker sort,"[4, 3, 1, 2, 0]",10
+heapsort,"[4, 3, 1, 2, 0]",10
+mergesort,"[4, 3, 2, 0, 1]",7
+quicksort,"[4, 3, 2, 0, 1]",6
+shaker sort,"[4, 3, 2, 0, 1]",10
+heapsort,"[4, 3, 2, 0, 1]",10
+mergesort,"[4, 3, 2, 1, 0]",7
+quicksort,"[4, 3, 2, 1, 0]",10
+shaker sort,"[4, 3, 2, 1, 0]",10
+heapsort,"[4, 3, 2, 1, 0]",10
