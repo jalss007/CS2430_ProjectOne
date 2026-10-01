@@ -22,7 +22,7 @@ python3 driver.py 5 7 # different sizes for fun
 ```
 
 ## Sorting Algorithms used:
-* Merge sort: A sort that uses the divide-and-conquer method. It works by dividing the list in half, recursively sorts the 2 separated lists and eventually merges them back into one list that is sorted.
+* Merge sort: A sort that uses the divide-and-conquer method. It works by dividing the list in half, recursively sorts the 2 separated lists and eventually merges them back into one list that is sorted. The time complexity for this sort is a stable O(nLogn), which makes it good for sorting larger datasets with the trade offs of it requiring more memory due to needing hold 2 separate lists for the elements to break off into.
 * Quick sort:
 * Shaker sort:
 * Heap sort: 
