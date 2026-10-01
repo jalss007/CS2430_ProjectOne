@@ -22,7 +22,7 @@ python3 driver.py 5 7 # different sizes for fun
 ```
 
 ## Sorting Algorithms used:
-*Merge sort:
-*Quick sort:
-*Shaker sort:
-*Heap sort: 
+* Merge sort:
+* Quick sort:
+* Shaker sort:
+* Heap sort: 
