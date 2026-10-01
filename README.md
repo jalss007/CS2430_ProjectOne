@@ -20,3 +20,9 @@ Optionally, one of more sizes can be passed on the command line to run a differe
 python3 driver.py 3 #setting it at n = 3, for a quick check at first
 python3 driver.py 5 7 # different sizes for fun
 ```
+
+## Sorting Algorithms used:
+-Merge sort:
+-Quick sort:
+-Shaker sort:
+-Heap sort: 
