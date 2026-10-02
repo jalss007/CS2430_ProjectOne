@@ -23,6 +23,6 @@ python3 driver.py 5 7 # different sizes for fun
 
 ## Sorting Algorithms used:
 * Merge sort: A sort that uses the divide-and-conquer method. It works by dividing the list in half, recursively sorts the 2 separated lists and eventually merges them back into one list that is sorted. The time complexity for this sort is a stable O(nLogn), which makes it good for sorting larger datasets with the trade offs of it requiring more memory due to needing hold 2 separate lists for the elements to break off into.
-* Quick sort:
+* Quick sort: A comparison based sort that also uses the divide-and-conquer method. It differs from merge sort as instead of partitioning the list in to halves, it does it based on a selected pivot. This pivot will is then used to recursively sort the sub-arrays. The average time complexity of this sort is O(n log n) with the worst case scenario being O(n^2). The time complexity varies depending on the size as well as if the data sets are partially or fully sorted. 
 * Shaker sort:
 * Heap sort: 
