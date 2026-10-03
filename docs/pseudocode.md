@@ -23,7 +23,7 @@ function permutations(n):
 	while next_permutation(current,n):
 		yield current
 
-## sorting_algorithms here:
+## sorting_algorithms here (kosoma):
 
 function MERGESORT(arr):
 	comparisons = 0
