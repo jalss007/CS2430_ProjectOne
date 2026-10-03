@@ -21,29 +21,16 @@
 
 - [x] **Task 3: Sorting Algorithms Implementation & Comparison Counter**
   - **Status:** Done
-<<<<<<< HEAD
-  - **Assigned To:** Team
-  - **Evidence:** Branch `feature/sorting-algos`
-
-- [x] **Task 4: UML & System Structure Diagram**
-  - **Status:** Done
-  - **Assigned To:** Team
-
-- [x] **Task 5: Part 3 Test Driver & Data Collection ($n = 4, 6, 8$)**
-  - **Status:** In Progress
-  - **Assigned To:** Team
-=======
   - **Assigned To:** Alain
   - **Evidence:** Branch `feature/sorting-algos`
 
 - [x] **Task 4: UML & System Structure Diagram**
-  - **Status:** Jose
+  - **Status:** Done
   - **Assigned To:** Jose
 
 - [x] **Task 5: Part 3 Test Driver & Data Collection ($n = 4, 6, 8$)**
   - **Status:** Done
   - **Assigned To:** Alain
->>>>>>> 6289dc4 (Update submodule code)
 
 ---
 
@@ -70,5 +57,3 @@ Helped Alain integrate and test the pivot finding and suffix reversal logic with
 
 **Blocker / risk this week?**
 None. Resolved the slice index syntax bug in `next_permutation()`.
-
-### Week 2 Status Report
