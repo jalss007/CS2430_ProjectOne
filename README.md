@@ -26,3 +26,16 @@ python3 driver.py 5 7 # different sizes for fun
 * Quick sort: A comparison based sort that also uses the divide-and-conquer method. It differs from merge sort as instead of partitioning the list in to halves, it does it based on a selected pivot. This pivot will is then used to recursively sort the sub-arrays. The average time complexity of this sort is O(n log n) with the worst case scenario being O(n^2). The time complexity varies depending on the size as well as if the data sets are partially or fully sorted. 
 * Shaker sort:
 * Heap sort: 
+
+## Average Number of Comparisons n = 4
+<img width="1938" height="1321" alt="n4 average graph" src="https://github.com/user-attachments/assets/0d0a71b1-1031-4885-b40d-986d45abc0dd" />
+
+
+## Average Number of Comparisons n = 6
+<img width="1921" height="1316" alt="n6 average graph" src="https://github.com/user-attachments/assets/a6c38d67-8aed-4428-9842-e23c58fc866f" />
+
+
+
+
+## Average Number of Comparisons n = 8
+<img width="2035" height="1244" alt="n8 average graph" src="https://github.com/user-attachments/assets/c1de49b4-e793-478f-b5f8-ae9f92433afb" />
