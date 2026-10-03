@@ -19,7 +19,7 @@
   - **Assigned To:** Alain / Kosoma
   - **Evidence:** `src/permutations.py` (`next_permutation` and `permutations` functions)
 
-- [ ] **Task 3: Sorting Algorithms Implementation & Comparison Counter**
+- [x] **Task 3: Sorting Algorithms Implementation & Comparison Counter**
   - **Status:** Done
 <<<<<<< HEAD
   - **Assigned To:** Team
@@ -29,7 +29,7 @@
   - **Status:** Done
   - **Assigned To:** Team
 
-- [ ] **Task 5: Part 3 Test Driver & Data Collection ($n = 4, 6, 8$)**
+- [x] **Task 5: Part 3 Test Driver & Data Collection ($n = 4, 6, 8$)**
   - **Status:** In Progress
   - **Assigned To:** Team
 =======
@@ -40,7 +40,7 @@
   - **Status:** Jose
   - **Assigned To:** Jose
 
-- [ ] **Task 5: Part 3 Test Driver & Data Collection ($n = 4, 6, 8$)**
+- [x] **Task 5: Part 3 Test Driver & Data Collection ($n = 4, 6, 8$)**
   - **Status:** Done
   - **Assigned To:** Alain
 >>>>>>> 6289dc4 (Update submodule code)
