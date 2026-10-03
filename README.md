@@ -39,3 +39,14 @@ python3 driver.py 5 7 # different sizes for fun
 
 ## Average Number of Comparisons n = 8
 <img width="2035" height="1244" alt="n8 average graph" src="https://github.com/user-attachments/assets/c1de49b4-e793-478f-b5f8-ae9f92433afb" />
+
+## 10 Best and 10 Best Worst Cases per Algorithm n = 4
+<img width="847" height="1022" alt="n4 worst and best" src="https://github.com/user-attachments/assets/b160144c-3317-45ce-bdb7-d701c190dbdc" />
+
+
+## 10 Best and 10 Best Worst Cases per Algorithm n = 6
+<img width="845" height="1019" alt="n6 worst and best" src="https://github.com/user-attachments/assets/f575d5d9-000d-4596-9b55-5b297fce574e" />
+
+
+## 10 Best and 10 Best Worst Cases per Algorithm n = 8
+<img width="870" height="1020" alt="n8 worst and best " src="https://github.com/user-attachments/assets/ac041795-c8f7-4658-8d54-969944756c0d" />
