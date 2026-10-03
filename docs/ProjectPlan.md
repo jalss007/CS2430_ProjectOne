@@ -21,6 +21,7 @@
 
 - [ ] **Task 3: Sorting Algorithms Implementation & Comparison Counter**
   - **Status:** Done
+<<<<<<< HEAD
   - **Assigned To:** Team
   - **Evidence:** Branch `feature/sorting-algos`
 
@@ -31,6 +32,18 @@
 - [ ] **Task 5: Part 3 Test Driver & Data Collection ($n = 4, 6, 8$)**
   - **Status:** In Progress
   - **Assigned To:** Team
+=======
+  - **Assigned To:** Alain
+  - **Evidence:** Branch `feature/sorting-algos`
+
+- [x] **Task 4: UML & System Structure Diagram**
+  - **Status:** Jose
+  - **Assigned To:** Jose
+
+- [ ] **Task 5: Part 3 Test Driver & Data Collection ($n = 4, 6, 8$)**
+  - **Status:** Done
+  - **Assigned To:** Alain
+>>>>>>> 6289dc4 (Update submodule code)
 
 ---
 
