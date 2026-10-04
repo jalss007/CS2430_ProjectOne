@@ -24,8 +24,8 @@ python3 driver.py 5 7 # different sizes for fun
 ## Sorting Algorithms used:
 * Merge sort: A sort that uses the divide-and-conquer method. It works by dividing the list in half, recursively sorts the 2 separated lists and eventually merges them back into one list that is sorted. The time complexity for this sort is a stable O(nLogn), which makes it good for sorting larger datasets with the trade offs of it requiring more memory due to needing hold 2 separate lists for the elements to break off into.
 * Quick sort: A comparison based sort that also uses the divide-and-conquer method. It differs from merge sort as instead of partitioning the list in to halves, it does it based on a selected pivot. This pivot will is then used to recursively sort the sub-arrays. The average time complexity of this sort is O(n log n) with the worst case scenario being O(n^2). The time complexity varies depending on the size as well as if the data sets are partially or fully sorted. 
-* Shaker sort:
-* Heap sort: 
+* Shaker sort: Passes through the array swapping adjacent out-of-order elements, moving from left to right to push the largest element to the end. It then reverses direction, passing right to left to push the smallest element to the beginning. It repeats this back-and-forth process, shrinking the unsorted boundary each pass. Simple, but extremely slow, time complexity of O(n^2)
+* Heap sort: Transforms the array into a Binary Max-Heap data structure where the root element is always the maximum value. It repeatedly swaps the root with the last unsorted array position, reduces the heap size by one, and runs a "heapify" process to restore the heap property for the remaining elements. Combines the O (n log n) worst-case time guarantee of Merge Sort with the O(1) auxiliary space efficiency (in-place sorting) of Quick Sort
 
 ## Average Number of Comparisons n = 4
 <img width="1938" height="1321" alt="n4 average graph" src="https://github.com/user-attachments/assets/0d0a71b1-1031-4885-b40d-986d45abc0dd" />
